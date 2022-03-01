@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PicPro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="aula_css.css">
 </head>
 <body>
                 <!--Cabeçalho-->
     <HEADer class="cabecalho">
         <div class="container">
-          <figure class="Logo__PicPro"> <!-- tag com o foco voltado para imagem-->
+          <figure class="cabecalho__logoPicPro"> <!-- tag com o foco voltado para imagem-->
 
               <img src="./assets/img/logo-picpro.png"  alt="Logo PicPro">
               
@@ -30,8 +33,9 @@
     <!-- Conteúdo principal da página-->
     <main>
         <section class="secaoDetalhesConta">
+            <div class="container">
             <div class="secaoDetalhesConta__sobreUsuario">
-                <img src="./assets/img/usuario.png" alt=" Ícone do responsável da conta PicPro">
+                <img src="./assets/img/usuariobina.png" alt=" Ícone do responsável da conta PicPro">
                 <p>Hi,<br> <b> @smiiranda</b></p>
             </div>
             <div class="secaoDetalhesConta__saldo">
@@ -55,6 +59,7 @@
                     <img src="/assets/img/cobrar.png" alt="Ícone cobrar">
                     <p>Cobrar</p>
                 </li>
+            </div>
             </ul>
 
         </section>
@@ -72,7 +77,7 @@
                         <img src="/assets/img/qrcode-imagem.png" alt="Imagem QR Code">
                         <p>@smiiranda</p>
                         <button><p>Cobrar um amigo</p></button>
-                        <strong>Compartilhar meu código</strong>
+                        <a href="">Compartilhar meu código</a>
                     </div>
                     <!--div pix-->
                     <div class="secaoTransacoes__pix">
@@ -99,18 +104,20 @@
                         <input type="text" placeholder="Insira o código de barras">
                     </div>
                     <!-- div de cobrar-->
-                    <div class="secaoTransacao__cobrar">
+                    <div class="secaoTransacoes__cobrar">
                         <img src="./assets/img/cobrar.png" alt="Ícone cobrar">
                         <h2>Cobrar</h2>
                         <p>Divida a conta com os amigos de forma fácil!</p>
-                        <div class="secaoTransacao__boxOpcao">
+                        <div class="secaoTransacoes__boxOpcao">
                             <img src="./assets/img/picpay-icon.png" alt="Ícone picpay">
                             <p><strong>Amigos do PicPay</strong> Divida e acompanhe um gasto com pessoas por aqui</p>
+                            
                         </div>
                 </div>
                 </section>
                 <!-- rodapé -->
                 <footer class="rodape">
+                    <div class="container">
                     <ul class="rodape__menuPrincipal">
                         <li class="rodape__menuItem">
                             <a href="#">
@@ -118,7 +125,7 @@
                             <p>Início</p>
                         </a>
                         </li>
-                        <li class="rodape__menuItem">
+                        <li class="rodape__menuItem rodape__menuItem--pagar">
                             <a href="#">
                                 <img src="/assets/img/carteira-icon.png" alt="Ícone carteira">
                                 <p>Carteira</p>
@@ -142,7 +149,8 @@
                                 <p>Store</p>
                             </a>
                         </li>
-                    </ul>
+        
+                    </div>
                 </footer>
     </main>
 </body>
